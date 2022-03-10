@@ -7,13 +7,13 @@ import com.example.demo.entity.Department;
 import java.util.List;
 
 public interface DepartmentService {
-    public Department saveDepartment(Department department);
+    Department saveDepartment(Department department);
 
-    public List<Department> fetchDepartmentList();
+    List<Department> fetchDepartmentList();
 
-    public Department fetchDepartmentBYID(Long id) throws DepartmentNotFoundException;
+    Department fetchDepartmentBYID(Long id) throws DepartmentNotFoundException;
 
-    public void deleteDepartmentBYID(Long id);
+    void deleteDepartmentBYID(Long id);
 
     Department updateDepartment(Long id, Department department);
 
